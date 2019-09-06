@@ -17,7 +17,7 @@ public class RainTerraces {
             leftMax[i] = rightMax[i] = 0;
         }
         leftMax = highestLeftLevel(leftMax, terraces);
-        rightMax = highestRightLevel(leftMax, terraces);
+        rightMax = highestRightLevel(rightMax, terraces);
         for(int terraceIndex = 0; terraceIndex < terraces.length; terraceIndex++){
             int stepHeight = Math.min(leftMax[terraceIndex], rightMax[terraceIndex]);
             if(stepHeight > terraces[terraceIndex]){
