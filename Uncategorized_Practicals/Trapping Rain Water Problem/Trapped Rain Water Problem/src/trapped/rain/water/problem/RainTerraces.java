@@ -27,4 +27,12 @@ public class RainTerraces {
         return lMaxLevel;
     }
     
+    public int[] highestRightLevel(int[] rMaxLevel, int[] terraces){
+        rMaxLevel[terraces.length - 1] = terraces[terraces.length - 1];
+        for(int terraceIndex = (terraces.length - 2); terraceIndex >= 0; terraceIndex -= 1){
+            rMaxLevel[terraceIndex] = Math.max(terraces[terraceIndex], rMaxLevel[terraceIndex + 1]);
+        }
+        return rMaxLevel;
+    }
+    
 }
