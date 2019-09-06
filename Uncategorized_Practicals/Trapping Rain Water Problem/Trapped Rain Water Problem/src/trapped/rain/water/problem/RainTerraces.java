@@ -16,8 +16,15 @@ public class RainTerraces {
         for(int i=0; i< terraces.length; i++){
             leftMax[i] = rightMax[i] = 0;
         }
-        
-        return 0;
+        leftMax = highestLeftLevel(leftMax, terraces);
+        rightMax = highestRightLevel(leftMax, terraces);
+        for(int terraceIndex = 0; terraceIndex < terraces.length; terraceIndex++){
+            int stepHeight = Math.min(leftMax[terraceIndex], rightMax[terraceIndex]);
+            if(stepHeight > terraces[terraceIndex]){
+                amountWater += (stepHeight - terraces[terraceIndex]);
+            }
+        }
+        return amountWater;
     }
     public int[] highestLeftLevel(int[] lMaxLevel, int[] terraces){
         lMaxLevel[0] = terraces[0];
@@ -34,5 +41,5 @@ public class RainTerraces {
         }
         return rMaxLevel;
     }
-    
+      
 }
