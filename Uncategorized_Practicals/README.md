@@ -10,3 +10,11 @@ on top of bar 2 and "3 units" between 2 and 4. See below diagram also.
 The concept is illustrated as shown:
 
 ![DP Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/Figures/42/trapping_rain_water.png)
+
+# Recursive Staircase Problem
+
+## The Problem
+
+There are `n` stairs, a person standing at the bottom wants to reach the top. The person can climb either `1` or `2` stairs at a time. _Count the number of ways, the person can reach the top._
+
+![](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/nth-stair.png)
