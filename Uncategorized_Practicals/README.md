@@ -1,4 +1,6 @@
-## Trapping Rain Water Problem
+# Trapping Rain Water Problem
+
+## The Problem
 
 An element of array can store water if there are higher bars on left and right. 
 We can find amount of water to be stored in every element by finding the heights 
